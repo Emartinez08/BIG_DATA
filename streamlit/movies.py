@@ -4,7 +4,7 @@ import pandas as pd
 st.title('Netflix app')
 
 DATE_COLUMN = 'released'
-DATA_URL = '/home/kike/Documents/BIG_DATA/csv/movies.csv'
+DATA_URL = 'movies.csv'
 
 @st.cache_data
 def load_data(nrows):
