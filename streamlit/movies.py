@@ -6,7 +6,7 @@ st.title('Netflix app')
 DATE_COLUMN = 'released'
 DATA_URL = 'movies.csv'
 
-@st.cache
+@st.cache_data
 def load_data(nrows):
     with open(DATA_URL, 'r', encoding='latin1') as doc:
         data = pd.read_csv(doc, nrows=nrows)
