@@ -2,6 +2,7 @@
 
 import pandas as pd
 import streamlit as st
+import pydeck as pdk
 
 # Open and read the CSV file
 file_path = '/home/kike/Documents/BIG_DATA/csv/movies.csv'
