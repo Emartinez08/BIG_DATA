@@ -4,12 +4,11 @@ import pandas as pd
 st.title('Netflix app')
 
 DATE_COLUMN = 'released'
-DATA_URL = 'movies.csv'
+DATA_URL = 'https://raw.githubusercontent.com/Emartinez08/BIG_DATA/main/csv/movies.csv'
 
 @st.cache_data
 def load_data(nrows):
-    with open(DATA_URL, 'r', encoding='latin1') as doc:
-        data = pd.read_csv(doc, nrows=nrows)
+    data = pd.read_csv(DATA_URL, nrows=nrows, encoding='latin1')
     return data
 
 def filter_data_by_filme(data, filme):
