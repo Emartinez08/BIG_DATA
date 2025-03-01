@@ -13,7 +13,7 @@ import codecs
 
 @st.cache
 def load_data(nrows):
-    doc = codecs.open('movies.csv','rU','latin1')
+    doc = codecs.open('movies.csv','latin1')
     data = pd.read_csv(doc, nrows=nrows)
     lowercase = lambda x: str(x).lower()
     return data
