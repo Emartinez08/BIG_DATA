@@ -3,7 +3,7 @@ import streamlit as st
 import pydeck as pdk
 
 # Open and read the CSV file
-file_path = '/home/kike/Documents/bigdata/csv/uber_dataset.csv'
+file_path = '/home/kike/Documents/BIG_DATA/csv/uber_dataset.csv'
 uber_data = pd.read_csv(file_path)
 
 # Rename columns to match the required names
