@@ -10,3 +10,10 @@ movie_data = pd.read_csv(file_path)
 
 # Display the first few rows of the dataframe
 print(movie_data.head())
+
+# Set the title of the Streamlit app
+st.title('Nextflix movies')
+
+# Display the dataframe in the Streamlit app
+st.dataframe(movie_data)
+
