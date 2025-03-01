@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # crear title de la app web
-st.title("Streamlit con Sidebar")
+st.title("Enrique Martinez")
 
 sidebar = st.sidebar
 sidebar.title("Titulo de barra lateral")
