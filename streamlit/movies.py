@@ -7,3 +7,6 @@ import streamlit as st
 file_path = '/home/kike/Documents/BIG_DATA/csv/movies.csv'
 movie_data = pd.read_csv(file_path)
 
+
+# Display the first few rows of the dataframe
+print(movie_data.head())
